@@ -1,0 +1,408 @@
+/* ==============================
+   CONFIGURAÇÕES GERAIS
+============================== */
+
+/* Define fonte e cores base para toda a página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f5f9f5;
+  color: #1a1a1a;
+  line-height: 1.6;
+}
+
+
+/* ==============================
+   CABEÇALHO
+============================== */
+
+header {
+  background-color: #2d7a2d;
+  color: white;
+  padding: 16px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+/* Logo com texto e ícone */
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* Links de navegação */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 24px;
+  font-size: 0.95rem;
+  font-weight: 500;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+/* ==============================
+   SEÇÃO HERO (topo da página)
+============================== */
+
+.hero {
+  background-color: #3a9e3a;
+  color: white;
+  text-align: center;
+  padding: 72px 24px;
+}
+
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  margin-bottom: 28px;
+  opacity: 0.9;
+}
+
+/* Botão principal do hero */
+.btn-hero {
+  display: inline-block;
+  background-color: white;
+  color: #2d7a2d;
+  padding: 12px 28px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-hero:hover {
+  background-color: #e8f5e8;
+}
+
+
+/* ==============================
+   SEÇÕES GERAIS (cadastro, preços etc.)
+============================== */
+
+.secao {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 56px 24px;
+}
+
+.secao h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2d7a2d;
+  margin-bottom: 8px;
+}
+
+/* Texto menor abaixo do título */
+.subtitulo {
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 0.95rem;
+}
+
+/* Separador visual entre seções */
+.secao + .secao {
+  border-top: 1px solid #dde8dd;
+}
+
+
+/* ==============================
+   TABELA DE PREÇOS
+============================== */
+
+/* Tabela gerada pelo JavaScript */
+#tabela-precos table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 16px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+#tabela-precos th {
+  background-color: #2d7a2d;
+  color: white;
+  padding: 10px 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+#tabela-precos td {
+  padding: 10px 16px;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+#tabela-precos tr:last-child td {
+  border-bottom: none;
+}
+
+/* Aviso de combo e fidelidade */
+.info-combo {
+  font-size: 0.95rem;
+  color: #444;
+  margin-top: 8px;
+}
+
+
+/* ==============================
+   FORMULÁRIOS
+============================== */
+
+.formulario {
+  background: white;
+  border-radius: 10px;
+  padding: 28px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Rótulos dos campos */
+.formulario label {
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: #333;
+}
+
+/* Campos de texto e selects */
+.formulario input,
+.formulario select {
+  padding: 10px 12px;
+  border: 1px solid #c8dcc8;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  outline: none;
+}
+
+.formulario input:focus,
+.formulario select:focus {
+  border-color: #2d7a2d;
+  background-color: white;
+}
+
+/* Grupo de checkboxes lado a lado */
+.checkboxes {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.checkboxes label {
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+/* Botões primários dos formulários */
+.formulario button {
+  background-color: #2d7a2d;
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  margin-top: 4px;
+}
+
+.formulario button:hover {
+  background-color: #245e24;
+}
+
+
+/* ==============================
+   CAIXA DE SIMULAÇÃO
+============================== */
+
+/* Exibe o resultado da simulação de preço */
+.simulacao-box {
+  background-color: #eaf5ea;
+  border: 1px solid #b4d9b4;
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 0.95rem;
+  color: #1a1a1a;
+  line-height: 1.8;
+}
+
+
+/* ==============================
+   MENSAGENS DE RETORNO
+============================== */
+
+.mensagem {
+  font-size: 0.9rem;
+  min-height: 20px;
+  color: #2d7a2d;
+}
+
+
+/* ==============================
+   CARDS DE PET CADASTRADO
+============================== */
+
+/* Card de cada pet na lista */
+.pet-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pet-card strong {
+  font-size: 1rem;
+  color: #2d7a2d;
+}
+
+.pet-card span {
+  font-size: 0.88rem;
+  color: #555;
+}
+
+/* Badge de fidelidade */
+.badge-fidelidade {
+  background-color: #e8f5e8;
+  color: #2d7a2d;
+  border-radius: 20px;
+  padding: 4px 12px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+
+/* ==============================
+   CARDS DO HISTÓRICO
+============================== */
+
+/* Card de cada atendimento no histórico */
+.historico-card {
+  background: white;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+}
+
+.historico-card strong {
+  color: #2d7a2d;
+}
+
+/* Linha do total do faturamento */
+.faturamento-total {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #2d7a2d;
+  margin-top: 16px;
+  padding-top: 12px;
+  border-top: 2px solid #dde8dd;
+}
+
+
+/* ==============================
+   BOTÃO SECUNDÁRIO
+============================== */
+
+/* Botão menor usado em seções sem formulário */
+.btn-secundario {
+  background-color: #2d7a2d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+  margin-bottom: 20px;
+}
+
+.btn-secundario:hover {
+  background-color: #245e24;
+}
+
+
+/* ==============================
+   ESTADO VAZIO
+============================== */
+
+/* Texto exibido quando não há dados ainda */
+.vazio {
+  color: #888;
+  font-size: 0.95rem;
+  padding: 16px 0;
+}
+
+
+/* ==============================
+   RODAPÉ
+============================== */
+
+footer {
+  background-color: #2d7a2d;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+
+/* ==============================
+   RESPONSIVIDADE (telas menores)
+============================== */
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 10px;
+    padding: 16px 20px;
+  }
+
+  nav a {
+    margin-left: 12px;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .pet-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+}
